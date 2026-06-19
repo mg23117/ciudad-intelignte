@@ -52,6 +52,11 @@
             window.Nivel1.inicializar();
         }
 
+        //iniciamos el Nivel 4
+        if (window.Nivel4) {
+              window.Nivel4.inicializar();
+       }
+
         // asignamos el evento al botón "Siguiente nivel" del Nivel 1
         if (btnSiguienteNivel1) {
             btnSiguienteNivel1.addEventListener('click', avanzarNivel);
