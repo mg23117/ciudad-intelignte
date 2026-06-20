@@ -47,13 +47,40 @@
 
                 <!-- aqui van a ir los otros niveles -->
             </div>
-
+            
+            <!-- El nivel 2 -->
             <div id="nivel2" class="nivel-section d-none">
                 <h2>Nivel 2: El Cartógrafo Perdido</h2>
-                <p>Próximamente...</p>
-                <!-- Aquí irá el canvas y los elementos del nivel 2 -->
+                <p>
+                    Debes reconstruir un mapa simplificado y marcar tu ubicación para continuar.
+                </p>
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Canvas donde se dibujará el mapa -->
+                        <canvas 
+                            id="mapCanvas"
+                            width="700" 
+                            height="400"
+                            class="border border-light rounded w-100">
+                        </canvas>
+                        
+                        <!-- Botón para dibujar el mapa -->
+                        <div class="mt-3">
+                            <button id="btnDibujarMapa" class="btn btn-primary">
+                                Dibujar mapa
+                            </button>
+                        </div>
 
+                        <!-- Mensajes del nivel -->
+                        <div id="mensajeNivel2" class="mt-3"></div>
+                    </div>
+                </div>
+                <!-- Botón para avanzar al siguiente nivel -->
+                <button id="btnSiguienteNivel2"class="btn btn-success mt-3"disabled>
+                    Siguiente nivel
+                </button>
             </div>
+            <!-- Fin del nivel 2 -->
 
             <!----Nivel 3---------------->
             <div id="nivel3" class="nivel-section d-none">
@@ -142,16 +169,15 @@
                 </div>
             </div>
 
-            <button id="btnSiguienteNivel4"
-                class="btn btn-success"
-                disabled>
-                 Siguiente nivel
-                  </button>
+            <button id="btnSiguienteNivel4"class="btn btn-success" disabled>
+                Siguiente nivel
+            </button>
 
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/nivel1.js"></script>
+        <script src="js/nivel2.js"></script>
         <script src="js/nivel3.js"></script>
         <script src="js/nivel4.js"></script>
         <script src="js/app.js"></script>
