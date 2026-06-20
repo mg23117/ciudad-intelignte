@@ -136,6 +136,39 @@ h2 {
     filter: grayscale(0.7);
 }
 
+/*Agregue botón color rojo para eliminar foto y color gris para activar camara.*/
+.btn-secondary {
+    background: linear-gradient(135deg, #2d1b4e, #4a2f74);
+    border-color: #7e4ad0;
+    color: #d4c0ff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.btn-secondary:hover:not(:disabled) {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #4a2f74, #7e4ad0);
+    border-color: #b388ff;
+    color: #ffffff;
+    /* Efecto Glow sutil en color morado para no competir con el botón principal */
+    box-shadow: 0 0 25px rgba(126, 74, 208, 0.5), 0 0 50px rgba(45, 27, 78, 0.4); 
+}
+.btn-danger {
+    background: linear-gradient(135deg, #ff3366, #bd003c);
+    border-color: #ff3366;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.btn-danger:hover:not(:disabled) {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #ff5c8a, #ff3366);
+    border-color: #ff5c8a;
+    color: #ffffff;
+    /* Sombras con el mismo radio de difusión que los otros botones */
+    box-shadow: 0 0 30px #ff3366, 0 0 60px #bd003c; 
+}
+/*Fin de diseño de botón para eliminar foto y color gris para activar camara.*/
+
 /* Alertas con estilo neón */
 .alert {
     border-radius: 15px;
