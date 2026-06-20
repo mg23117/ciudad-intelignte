@@ -22,6 +22,10 @@
         progressBar.setAttribute('aria-valuenow', porcentaje);
     }
 
+    // Exponemos la función para que otros niveles
+    // puedan actualizar la barra de progreso
+    window.actualizarProgresoJuego = actualizarProgreso;
+
     // Función para avanzar al siguiente nivel
     function avanzarNivel() {
 

@@ -94,6 +94,9 @@
         }
         alert("🔒 ¡Evidencia verificada correctamente! Accediendo al Nivel 4...");
         
+        // Actualizamos progreso al llegar al Nivel 4
+        window.actualizarProgresoJuego(4);
+
         document.getElementById('nivel3').classList.add('d-none');
         const nivel4 = document.getElementById('nivel4');
         if (nivel4) nivel4.classList.remove('d-none');
