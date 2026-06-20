@@ -109,6 +109,30 @@
         if (btnProcesar) {
             btnProcesar.addEventListener("click", procesarDatos);
         }
+        // Evento para pasar al Nivel 5
+        btnSiguiente.addEventListener('click', function () {
+
+            document
+                .getElementById('nivel4')
+                .classList
+                .add('d-none');
+
+            document
+                .getElementById('nivel5')
+                .classList
+                .remove('d-none');
+
+            // Barra al 100%
+            if (window.actualizarProgresoJuego) {
+                window.actualizarProgresoJuego(6);
+            }
+
+            // Inicializamos el nivel final
+            if (window.Nivel5) {
+                window.Nivel5.inicializar();
+            }
+
+        });
     }
 
     window.Nivel4 = {

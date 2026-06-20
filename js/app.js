@@ -16,7 +16,10 @@
 
     // Función para actualizar la barra de progreso
     function actualizarProgreso(nivel) {
-        const porcentaje = ((nivel - 1) / 5) * 100;
+        const porcentaje = Math.min(
+        ((nivel - 1) / 5) * 100,
+        100
+    );
         progressBar.style.width = porcentaje + '%';
         progressBar.textContent = Math.round(porcentaje) + '%';
         progressBar.setAttribute('aria-valuenow', porcentaje);
